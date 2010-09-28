@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "mapit"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Simple gem to put maps on your apps}
+    gem.description = %Q{Very, very simple gem that provides a helper to show a map of the specified address using Google Maps.}
     gem.email = "david@crowdint.com"
-    gem.homepage = "http://github.com/dabit/mapit"
+    gem.homepage = "http://github.com/crowdint/mapit"
     gem.authors = ["David Padilla"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "thoughtbot-shoulda", "~> 2.11.1"
+    gem.add_development_dependency "rails", ">= 2.3.8"
     gem.files = FileList['lib/**/*.rb'].to_a
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

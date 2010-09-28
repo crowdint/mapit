@@ -10,22 +10,22 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Padilla"]
   s.date = %q{2010-09-28}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Very, very simple gem that provides a helper to show a map of the specified address using Google Maps.}
   s.email = %q{david@crowdint.com}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.markdown"
   ]
   s.files = [
     "lib/mapit.rb",
      "lib/mapit/class_methods.rb",
      "lib/mapit/view_helpers.rb"
   ]
-  s.homepage = %q{http://github.com/dabit/mapit}
+  s.homepage = %q{http://github.com/crowdint/mapit}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Simple gem to put maps on your apps}
   s.test_files = [
     "test/helper.rb",
      "test/test_helpers.rb",
@@ -37,12 +37,15 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_development_dependency(%q<thoughtbot-shoulda>, ["~> 2.11.1"])
+      s.add_development_dependency(%q<rails>, [">= 2.3.8"])
     else
-      s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_dependency(%q<thoughtbot-shoulda>, ["~> 2.11.1"])
+      s.add_dependency(%q<rails>, [">= 2.3.8"])
     end
   else
-    s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+    s.add_dependency(%q<thoughtbot-shoulda>, ["~> 2.11.1"])
+    s.add_dependency(%q<rails>, [">= 2.3.8"])
   end
 end
 
