@@ -2,6 +2,6 @@ require 'action_view/helpers'
 
 module ViewHelpers
   def mapframe
-    "I DID IT"
+    "I find your lack of tests disturbing"
   end
 end
