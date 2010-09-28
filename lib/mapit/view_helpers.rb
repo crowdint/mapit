@@ -12,6 +12,6 @@ module ViewHelpers
       :src => Mapit.url_for_address(address)
     }.merge(options)
 
-    content_tag(:iframe, '', options)
+    content_tag(:iframe, '', options, false)
   end
 end
